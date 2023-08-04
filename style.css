@@ -31,6 +31,23 @@ header,footer {
     box-sizing: border-box;
 }
 
+/* Estilos padrão para a navegação */
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Media query para dispositivos com largura menor que 768px (por exemplo, smartphones) */
+@media screen and (max-width: 767px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-collapse {
+        margin-top: 10px;
+    }
+}
+
 body {
     color: map-get(colors, white);
     font: 100 100%/1.6 "Hebbo", sans-serif;
