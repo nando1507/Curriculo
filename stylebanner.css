@@ -30,6 +30,7 @@ body {
       text-align: center;
       flex-direction: column-reverse;
       justify-content: center;
+      font-size: medium;
     }
   }
   
