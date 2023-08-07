@@ -64,11 +64,12 @@ body {
     white-space: nowrap;
     width: 1px;
 }
-
+/* 
 .card {
     backdrop-filter: blur(10px);
     background: rgba(map-get($colors, white), 0,075);
     border: 1px solid rgba(map-get($colors, white), 0.18);
     border-radius: 15px;
     box-shadow: 0 10px 35px 0 rgba(map-get($colors, brown), 0.65);
-}
+} */
+

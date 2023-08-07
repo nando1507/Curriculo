@@ -11,48 +11,8 @@
         <link rel="stylesheet" type="text/css" href="stylebanner.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    </head>
-    <style>
-        .tooltip {
-          position: relative;
-          display: inline-block;
-          border-bottom: 1px dotted black;
-        }
-        
-        .tooltip .tooltiptext {
-          visibility: hidden;
-          width: 120px;
-          background-color: #555;
-          color: #fff;
-          text-align: center;
-          border-radius: 6px;
-          padding: 5px 0;
-          position: absolute;
-          z-index: 1;
-          bottom: 125%;
-          left: 50%;
-          margin-left: -60px;
-          opacity: 0;
-          transition: opacity 0.3s;
-        }
-        
-        .tooltip .tooltiptext::after {
-          content: "";
-          position: absolute;
-          top: 100%;
-          left: 50%;
-          margin-left: -5px;
-          border-width: 5px;
-          border-style: solid;
-          border-color: #555 transparent transparent transparent;
-        }
-        
-        .tooltip:hover .tooltiptext {
-          visibility: visible;
-          opacity: 1;
-        }
-        </style>
-    <body class="corpo"> 
+    </head> 
+    <body class="corpo">         
         <nav class="navbar bg-dark navbar-expand-lg justify-content-center"  data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -88,89 +48,79 @@
         </nav>
         <header class="banner">        
             <div class="">
-                <h2 class="col text-center">
+                <h2 class="text-center">
                     Fernando Bareño Caló
                 </h2>
                 <h3 class="row">                   
-                    <div>
-                        <p class=" text-justify">
-                            Seja Bem-Vindo ao meu Curriculo.
-                        </p>
-                    </div>
-                    <div>
-                        <p class=" text-justify">
+                    <ul>
+                        <li>
+                            <p class=" text-center">
+                                Seja Bem-Vindo ao meu Curriculo.
+                            </p>
+                        </li>
+                        <li> <p class=" text-center">
                             Aonde farei uma breve apresentação sobre mim e minha jornada 
-                        </p>
-                    </div>                                       
+                        </p></li>                        
+                    </ul>                                     
                 </h3>
             </div>
             <img src="https://avatars.githubusercontent.com/u/22230099?v=4" alt="fernando-bareno-calo" />
         </header>
-        <section >
+        <section>
             <div id="Dados Pessoais" class="container align-text-top">
                 <h1 class="container text-center">
                     <small>
                         Dados Pessoais
                     </small>
                 </h1>    
+                <!-- Informações Pessoais -->
                 <div class="container">
-                    <i class="fa-solid fa-cake-candles"> </i>  15/07/1992 
-                    <div>
-                        <span class="tooltiptext">
-                            Data de Nascimento:
-                        </span>
-                    </div> 
-                    <div class="tooltip"> 
-                        <i class="fa-solid fa-user-group"></i> Estado civil: Solteiro
-                    </div>
-                </div>                 
-                <div></br></div>
-                <div class="container">
-                    
-                    <div> 
-                        <i class="fa-solid fa-house"></i> Endereço: Av. João Ventura dos Santos, 222
-                    </div> 
-                    <div> 
-                        <i class="fa-solid fa-road"></i> Bairro: Jd. Baronesa
-                    </div> 
-                    <div> 
-                        <i class="fa-solid fa-city"></i> Cidade: Osasco/SP
-                    </div> 
-                    <div> 
-                        <i class="fa-solid fa-compass"></i> CEP: 06260-170
-                    </div> 
+                    <i class="fa-solid fa-address-card"></i> Informações Pessoais
+                    <ul>       
+                        <li title="Data de Nascimento" id="dtNascimento"> <i class="fa-solid fa-cake-candles"> </i> 15/07/1992 </li> 
+                        <!-- <script>getIdade() </script> -->
+                        <li title="idade"> <i class="fa-solid fa-clock"></i> 31 Anos </li> 
+                        <li title="Estado civil"> <i class="fa-solid fa-user-group"></i> Solteiro  </li> 
+                        <li title="Nacionalidade"><i class="fa-solid fa-globe"></i> Brasileiro</li>
+                    </ul>
+                </div>     
+                <!-- Endereço -->
+                <div class="container">     
+                    <i class="fa-solid fa-map-location"></i> Endereço:   
+                    <ul>
+                        <li title="Endereço: Avenida"></li><i class="fa-solid fa-house"></i> Av. João Ventura dos Santos, 222 </li>
+                        <li title="Endereço: Bairro"></li><i class="fa-solid fa-road"></i> Jd. Baronesa </li>
+                        <li title="Endereço: Cidade"><i class="fa-solid fa-city"></i> Osasco/SP </li>
+                        <li title="Endereço: CEP"><i class="fa-solid fa-compass"></i> 06260-170 </li>                        
+                    </ul>
                 </div>
-                <div></br></div>
-                <div class="align-text-top">                    
+                <!-- Contato -->
+                <div class="align-text-top">
                     <div class="container-fluid row">
-                        <div>
-                            <i class="fa-regular fa-message"></i> Contato:
+                        <div title="Contato">
+                            <i class="fa-solid fa-message"></i> Contato:
                         </div>
-                        <div class="container-fluid"> 
-                            
-                            <div> 
-                                <i class="fa-solid fa-phone"></i> (11) 3686-0768
-                            </div> 
-                            <div> 
-                                <i class="fa-solid fa-mobile"></i> (11) 98725-9103
-                            </div> 
-                            <div> 
-                                <i class="fa-solid fa-mobile"></i> (11) 98959-7295
-                            </div> 
+                        <div class="container-fluid">           
+                            <ul>                 
+                                <li title="Contato: Telefone Residêncial"><i class="fa-solid fa-phone"></i> (11) 3686-0768 </li>
+                                <li title="Contato: Celular Principal e WhatsApp"><i class="fa-brands fa-whatsapp"></i> (11) 98725-9103 </li>
+                                <li title="Contato: Contato Secundário"><i class="fa-solid fa-mobile"></i> (11) 98959-7295 </li>
+                                <li title="Contato: E-Mail"><i class="fa-solid fa-envelope"></i> Fernandob.calo@outlook.com </li>
+                            </ul>                          
                         </div>                         
+                   
                     </div>                    
-                    <div class="container-fluid"> 
-                        <i class="fa-solid fa-envelope"></i> E-mail: Fernandob.calo@outlook.com
-                    </div> 
                 </div>
-                <div></br></div>
-                <div class="container">
-                    <div> 
-                        <i class="devicon-linkedin-plain colored"></i> <a href="https://www.linkedin.com/in/fernando-bareno-calo/"> Fernando Bareño Caló  </a>            
-                    </div>      
-                    <div> 
-                        <i class="devicon-github-original colored"></i> <a href="https://github.com/nando1507"> nando1507 </a> 
-                    </div>
+                <!-- Midias Sociais -->
+                <div class="container-fluid row">
+                    <ul>
+                        <li title="linkedin"> 
+                            <i class="devicon-linkedin-plain colored"></i> <a href="https://www.linkedin.com/in/fernando-bareno-calo/"> Fernando Bareño Caló  </a>            
+                        </li>      
+                        <li title="github"> 
+                            <i class="devicon-github-original colored"></i> <a href="https://github.com/nando1507"> nando1507 </a> 
+                        </li>
+                    </ul>
                 </div>                
             </div>
         </section>        
@@ -214,21 +164,22 @@
                         Formação Acadêmica
                     </small>
                 </h1>    
-                <div class="container-fluid">                   
-                    <h5>
-                        <div class="row"> 
-                            Engenharia da Computação - Bacharelado 
-                        </div>
-                    </h5>
-                    <div class="col"> (Concluído pela Centro Universitário IBTA - Dezembro/2018) </div>
-                </div>
-            </br>
-                <div class="container-fluid">
-                    <h5>
-                        <div class="row"> MBA Em Artificial Intelligence & Machine Learning </div>                
-                    </h5>
-                    <div class="col"> (Concluído pela FIAP - Outubro/2020) </div>
-                </div>
+                <ul>
+                    <div class="container-fluid">                   
+                        <h5>
+                            <div class="row"> 
+                                Engenharia da Computação - Bacharelado 
+                            </div>
+                        </h5>
+                        <div class="col"> (Concluído pela Centro Universitário IBTA - Dezembro/2018) </div>
+                    </div>
+                    <div class="container-fluid">
+                        <h5>
+                            <div class="row"> MBA Em Artificial Intelligence & Machine Learning </div>                
+                        </h5>
+                        <div class="col"> (Concluído pela FIAP - Outubro/2020) </div>
+                    </div>
+                </ul>            
             </div>
         </section>
         <section>
@@ -238,30 +189,32 @@
                         Cursos Complementares
                     </small>
                 </h1>    
-                Eletricista de manutenção - SENAI Mariano Ferraz.  </br>
-                Montagem e Configuração de microcomputadores - SENAI Nadir Dias de Figueiredo.  </br>
-                Web Design: HTML, Fireworks, Dreamweaver e Flash - SENAI Mariano Ferraz.  </br>
-                Windows XP e Internet - Bit Company.  </br>
-                Microsoft Word Básico - Bit Company.  </br>
-                Microsoft Excel Básico - Bit Company.  </br>
-                Microsoft PowerPoint Básico - Bit Company.  </br>
-                Microsoft Access Básico - Bit Company.  </br>
-                Microsoft Excel VBA - Clarify Treinamento  </br>
-                OnBase Certified System Administration - Hyland  </br>
-                OnBase Certified Workflow Administrator - Hyland  </br>
-                Inglês Básico - United Idiomas  </br>
-                Desenvolvimento .Net - Fiap  </br>
-                Formação em C# E Orientação A Objetos - Alura  </br>
-                Formação em Boas Práticas Em C# - Alura  </br>
-                Formação em Começando Em DevOps - Alura  </br>
-                Formação em SQL Com Microsoft Sql Server 2017 - Alura  </br>
-                Formação em Powershell: Automatize Suas Tarefas - Alura  </br>
-                Formação em Aprofunde Em .Net Com Arquitetura De MicrosServiços E RabbitMQ - Alura  </br>
-                Formação em Começando Em Cloud Computing - Alura  </br>
-                Formação em Começando Na Aws Com Lightsail, Ec2, S3, Vpc, Rds E Dynamodb - Alura  </br>
-                Formação em Certificação Aws Certified Cloud Practitioner - Alura  </br>
-                Formação em Amazon Web Services - Alura  </br>
-                Formação em Excel - Alura  </br>
+                <ul>
+                    <li>Eletricista de manutenção - SENAI Mariano Ferraz.  </li>
+                    <li>Montagem e Configuração de microcomputadores - SENAI Nadir Dias de Figueiredo.  </li>
+                    <li>Web Design: HTML, Fireworks, Dreamweaver e Flash - SENAI Mariano Ferraz.  </li>
+                    <li>Windows XP e Internet - Bit Company.  </li>
+                    <li>Microsoft Word Básico - Bit Company.  </li>
+                    <li>Microsoft Excel Básico - Bit Company.  </li>
+                    <li>Microsoft PowerPoint Básico - Bit Company.  </li>
+                    <li>Microsoft Access Básico - Bit Company.  </li>
+                    <li>Microsoft Excel VBA - Clarify Treinamento  </li>
+                    <li>OnBase Certified System Administration - Hyland  </li>
+                    <li>OnBase Certified Workflow Administrator - Hyland  </li>
+                    <li>Inglês Básico - United Idiomas  </li>
+                    <li>Desenvolvimento .Net - Fiap  </li>
+                    <li>Formação em C# E Orientação A Objetos - Alura  </li>
+                    <li>Formação em Boas Práticas Em C# - Alura  </li>
+                    <li>Formação em Começando Em DevOps - Alura  </li>
+                    <li>Formação em SQL Com Microsoft Sql Server 2017 - Alura  </li>
+                    <li>Formação em Powershell: Automatize Suas Tarefas - Alura  </li>
+                    <li>Formação em Aprofunde Em .Net Com Arquitetura De MicrosServiços E RabbitMQ - Alura  </li>
+                    <li>Formação em Começando Em Cloud Computing - Alura  </li>
+                    <li>Formação em Começando Na Aws Com Lightsail, Ec2, S3, Vpc, Rds E Dynamodb - Alura  </li>
+                    <li>Formação em Certificação Aws Certified Cloud Practitioner - Alura  </li>
+                    <li>Formação em Amazon Web Services - Alura  </li>
+                    <li>Formação em Excel - Alura  </li>
+                </ul>
 
             </div>
         </section>
@@ -272,41 +225,47 @@
                         Experiência Profissional
                     </small>
                 </h1>    
-                BANCO PAN S.A. </br>
-                Av. Paulista, 1374 - Bela Vista - São Paulo - SP. </br>
-                Analista de Contas a Pagar Jr. </br>
-                De 03/2015 Até 11/2016 </br>
-                Analista de Planejamento e Controles Operacionais Jr. </br>
-                De 12/2016 Até 12/2019 </br>
-                Analista de Planejamento e Controles Operacionais Pl. </br>
-                De 01/2020 Até 06/2020 </br>
-                Analista de Sistemas I </br>
-                De 07/2020 até 06/2021 </br>
-                Engenheiro de Software Jr.  </br>
-                Desde 07/2021  </br>
-                </br>
-                </br>
-                </br>
-                Sonda Prockwork Informática LTDA. </br>
-                Rua Dom Aguirre, BL II 1 And - Vila Sofia - São Paulo - SP. </br>
-                Projeto Banco Pan </br>
-                De 12/2013 a 03/2015 </br>
-                </br>
-                ConnectCom Teleinformática Com. E Serv. LTDA. </br>
-                Av. Bernardino de Campos, 98 - Paraiso, São Paulo - SP. </br>
-                Projeto Banco Panamericano/ Banco Pan </br>
-                De 09/2012 a 12/2013 </br>
-                </br>
-                </br>
-                SITEL DO BRASIL LTDA. </br>
-                Rua Achilles Orlando Curtollo, 499 - Barra Funda, São Paulo - SP. </br>
-                Projeto HP Consumer </br>
-                De 06/2011 a 08/2012. </br>
-                </br>
-                MAK PAINÉIS ELÉTRICOS LTDA.  </br>
-                Rua Osasco nº1231 Pq. Empresarial - Cajamar/SP </br>
-                De 07/2010 a 12/2010. </br>
+                <ul>
+                    <li><h5>Banco Pan S.A. </h5></li>
+                    <li>Av. Paulista, 1374 - Bela Vista - São Paulo - SP. </li>
+                    <li>Analista de Contas a Pagar Jr. </li>
+                    <li>De 03/2015 Até 11/2016 </li>
+                    <li>Analista de Planejamento e Controles Operacionais Jr. </li>
+                    <li>De 12/2016 Até 12/2019 </li>
+                    <li>Analista de Planejamento e Controles Operacionais Pl. </li>
+                    <li>De 01/2020 Até 06/2020 </li>
+                    <li>Analista de Sistemas I </li>
+                    <li>De 07/2020 até 06/2021 </li>
+                    <li>Engenheiro de Software Jr.  </li>
+                    <li>Desde 07/2021  </li>
+                </ul>
+                
+                <ul>
+                    <li><h5>Sonda Prockwork Informática LTDA.</h5></li>
+                    <li>Rua Dom Aguirre, BL II 1 And - Vila Sofia - São Paulo - SP. </li>
+                    <li>Projeto Banco Pan </li>
+                    <li>De 12/2013 a 03/2015 </li>
+                </ul>
+                
+                <ul>
+                    <li> <h5>ConnectCom Teleinformática Com. E Serv. LTDA. </h5></li>
+                    <li> Av. Bernardino de Campos, 98 - Paraiso, São Paulo - SP. </li>
+                    <li> Projeto Banco Panamericano/ Banco Pan </li>
+                    <li> De 09/2012 a 12/2013 </li>
+                </ul>                
 
+                <ul>
+                    <li> <h5>SITEL DO BRASIL LTDA. </h5></li>
+                    <li> Rua Achilles Orlando Curtollo, 499 - Barra Funda, São Paulo - SP. </li>
+                    <li> Projeto HP Consumer </li>
+                    <li> De 06/2011 a 08/2012. </li>
+                </ul>
+
+                <ul>
+                    <li> <h5>MAK PAINÉIS ELÉTRICOS LTDA. </h5></li>
+                    <li> Rua Osasco nº1231 Pq. Empresarial - Cajamar/SP </li>
+                    <li> De 07/2010 a 12/2010. </li>
+                </ul>
             </div>
         </section>
         <footer>
@@ -315,5 +274,14 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
         <script src="https://kit.fontawesome.com/77455978b6.js" crossorigin="anonymous"></script>
-    </body>   
+        <script>
+            function getIdade(){
+                var idade = document.getElementById("dtNascimento").value;
+                var dia = new Date();
+                alert(idade - dia);
+                return idade - dia
+            }
+        </script>
+
+</body>   
 </html>
