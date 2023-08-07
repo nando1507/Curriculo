@@ -9,9 +9,49 @@
         <link rel="stylesheet" type="text/css" href="CSSReset.css" />
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="stylebanner.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     </head>
+    <style>
+        .tooltip {
+          position: relative;
+          display: inline-block;
+          border-bottom: 1px dotted black;
+        }
+        
+        .tooltip .tooltiptext {
+          visibility: hidden;
+          width: 120px;
+          background-color: #555;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 5px 0;
+          position: absolute;
+          z-index: 1;
+          bottom: 125%;
+          left: 50%;
+          margin-left: -60px;
+          opacity: 0;
+          transition: opacity 0.3s;
+        }
+        
+        .tooltip .tooltiptext::after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          margin-left: -5px;
+          border-width: 5px;
+          border-style: solid;
+          border-color: #555 transparent transparent transparent;
+        }
+        
+        .tooltip:hover .tooltiptext {
+          visibility: visible;
+          opacity: 1;
+        }
+        </style>
     <body class="corpo"> 
         <nav class="navbar bg-dark navbar-expand-lg justify-content-center"  data-bs-theme="dark">
             <div class="container-fluid">
@@ -51,12 +91,16 @@
                 <h2 class="col text-center">
                     Fernando Bareño Caló
                 </h2>
-                <h3 class="row text-center">                   
+                <h3 class="row">                   
                     <div>
-                        Seja Bem-Vindo ao meu Curriculo.
+                        <p class=" text-justify">
+                            Seja Bem-Vindo ao meu Curriculo.
+                        </p>
                     </div>
                     <div>
-                        Aonde farei uma breve apresentação sobre mim e minha jornada 
+                        <p class=" text-justify">
+                            Aonde farei uma breve apresentação sobre mim e minha jornada 
+                        </p>
                     </div>                                       
                 </h3>
             </div>
@@ -69,13 +113,18 @@
                         Dados Pessoais
                     </small>
                 </h1>    
-                <!-- agrupar informações de endereço e telefone em grupos -->
-                <div> 
-                    <i class="fa-solid fa-cake-candles"></i> Data de Nascimento: 15/07/1992 
-                </div> 
-                <div> 
-                    <i class="fa-solid fa-user-group"></i> Estado civil: Solteiro
-                </div> 
+                <div class="container">
+                    <i class="fa-solid fa-cake-candles"> </i>  15/07/1992 
+                    <div>
+                        <span class="tooltiptext">
+                            Data de Nascimento:
+                        </span>
+                    </div> 
+                    <div class="tooltip"> 
+                        <i class="fa-solid fa-user-group"></i> Estado civil: Solteiro
+                    </div>
+                </div>                 
+                <div></br></div>
                 <div class="container">
                     
                     <div> 
@@ -91,8 +140,9 @@
                         <i class="fa-solid fa-compass"></i> CEP: 06260-170
                     </div> 
                 </div>
+                <div></br></div>
                 <div class="align-text-top">                    
-                    <div class="row">
+                    <div class="container-fluid row">
                         <div>
                             <i class="fa-regular fa-message"></i> Contato:
                         </div>
@@ -107,24 +157,23 @@
                             <div> 
                                 <i class="fa-solid fa-mobile"></i> (11) 98959-7295
                             </div> 
-                        </div> 
-                        
-                    </div>
-                    
-                    <div> 
+                        </div>                         
+                    </div>                    
+                    <div class="container-fluid"> 
                         <i class="fa-solid fa-envelope"></i> E-mail: Fernandob.calo@outlook.com
                     </div> 
                 </div>
-                <div> 
-                    <i class="devicon-linkedin-plain colored"></i> <a href="https://www.linkedin.com/in/fernando-bareno-calo/"> Fernando Bareño Caló  </a>            
-                </div>      
-                <div> 
-                    <i class="devicon-github-original colored"></i> <a href="https://github.com/nando1507"> nando1507 </a> 
-                </div>
-                
+                <div></br></div>
+                <div class="container">
+                    <div> 
+                        <i class="devicon-linkedin-plain colored"></i> <a href="https://www.linkedin.com/in/fernando-bareno-calo/"> Fernando Bareño Caló  </a>            
+                    </div>      
+                    <div> 
+                        <i class="devicon-github-original colored"></i> <a href="https://github.com/nando1507"> nando1507 </a> 
+                    </div>
+                </div>                
             </div>
-        </section>
-        
+        </section>        
         <section>
             <div id="Objetivo">
                 <h1 class="container text-center">
@@ -132,8 +181,12 @@
                         Objetivo
                     </small>
                 </h1>    
-                <div>   
-                    Cargo de nível sênior ou Pleno, preferencialmente em áreas de Tecnologia, MIS ou BI.
+                <div class="text-center">   
+                    <h5>
+                        <p class="text-justify">
+                            Cargo de nível sênior ou Pleno, preferencialmente em áreas de Tecnologia, MIS ou BI.
+                        </p>
+                    </h5>
                 </div>
             </div>
         </section>
@@ -145,10 +198,12 @@
                     </small>
                 </h1>    
                 <div class="container">                    
-                    Perfil analítico, experiência em gerenciamento e manipulação de bases de dados SQL Server, 
-                    automatização de tarefas operacionais, geração de relatórios, desenvolvimento de soluções de médio porte, 
-                    programação em VB/VBA, SQL e C#, análise de dados, 
-                    desenvolvimento e deploy de rotinas em Cloud (AWS), planejamento de escopo e arquitetura de aplicação.                    
+                    <p class="text-justify">
+                        Perfil analítico, experiência em gerenciamento e manipulação de bases de dados SQL Server, 
+                        automatização de tarefas operacionais, geração de relatórios, desenvolvimento de soluções de médio porte, 
+                        programação em VB/VBA, SQL e C#, análise de dados, 
+                        desenvolvimento e deploy de rotinas em Cloud (AWS), planejamento de escopo e arquitetura de aplicação.                    
+                    </p>
                 </div>
             </div>
         </section>
@@ -159,12 +214,19 @@
                         Formação Acadêmica
                     </small>
                 </h1>    
-                <div class="container">
-                    <div class="row"> Engenharia da Computação - Bacharelado </div>
+                <div class="container-fluid">                   
+                    <h5>
+                        <div class="row"> 
+                            Engenharia da Computação - Bacharelado 
+                        </div>
+                    </h5>
                     <div class="col"> (Concluído pela Centro Universitário IBTA - Dezembro/2018) </div>
                 </div>
-                <div class="container">
-                    <div class="row"> MBA Em Artificial Intelligence & Machine Learning </div>                
+            </br>
+                <div class="container-fluid">
+                    <h5>
+                        <div class="row"> MBA Em Artificial Intelligence & Machine Learning </div>                
+                    </h5>
                     <div class="col"> (Concluído pela FIAP - Outubro/2020) </div>
                 </div>
             </div>
@@ -248,9 +310,9 @@
             </div>
         </section>
         <footer>
-            <p>© 2023 Fernando Bareño Caló</p>
+            <p><i class="fa-solid fa-copyright"></i> 2023 Fernando Bareño Caló</p>
         </footer>        
-        <script src="lib/bootstrap/js/bootstrap.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
         <script src="https://kit.fontawesome.com/77455978b6.js" crossorigin="anonymous"></script>
     </body>   
