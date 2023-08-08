@@ -35,6 +35,7 @@ header,footer {
 .navbar-nav {
     display: flex;
     justify-content: space-between;
+    /* position: fixed; */
 }
 
 /* Media query para dispositivos com largura menor que 768px (por exemplo, smartphones) */
@@ -64,6 +65,17 @@ body {
     white-space: nowrap;
     width: 1px;
 }
+
+hr.sections {
+    border-radius: 5px;
+    display: block;
+    margin-top: 0.5em black;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+  }
 /* 
 .card {
     backdrop-filter: blur(10px);
@@ -72,4 +84,3 @@ body {
     border-radius: 15px;
     box-shadow: 0 10px 35px 0 rgba(map-get($colors, brown), 0.65);
 } */
-
