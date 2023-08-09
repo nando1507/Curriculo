@@ -1,10 +1,3 @@
-/*Variables */
-
-$colors: (
-    white: #FEFEFE,
-    brown: #362100
-);
-
 .corpo{
     background-color: ECF0F1;
 }
@@ -66,7 +59,7 @@ body {
     width: 1px;
 }
 
-hr.sections {
+.hr.sections {
     border-radius: 5px;
     display: block;
     margin-top: 0.5em black;
@@ -75,7 +68,14 @@ hr.sections {
     margin-right: auto;
     border-style: inset;
     border-width: 1px;
-  }
+    color: blue-900;
+}
+
+
+.a {
+    text-decoration: none;
+    color: #000;
+}
 /* 
 .card {
     backdrop-filter: blur(10px);
