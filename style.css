@@ -10,7 +10,7 @@
 }
 
 .navbar{
-    background-color: #1b1526;
+    background-color: #34495E;
 }
 
 header,footer {
@@ -19,7 +19,7 @@ header,footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #1b1526;
+    /* background: #2980B9; */
     color: #ffffff;
     box-sizing: border-box;
 }
