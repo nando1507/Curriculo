@@ -1,6 +1,6 @@
-.corpo{
-    background-color: ECF0F1;
-}
+/* .corpo{
+    background-color: gray-100;
+} */
 
 .h1{
     margin: 0 auto;
@@ -11,6 +11,8 @@
 
 .navbar{
     background-color: #34495E;
+    position: initial;
+    top: 0;
 }
 
 header,footer {
@@ -20,7 +22,7 @@ header,footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: #2980B9; */
+    background: #34495E; 
     color: #ffffff;
     box-sizing: border-box;
 }
@@ -45,7 +47,7 @@ header,footer {
 
 body {
     color: map-get(colors, white);
-    font: 100 100%/1.6 "Hebbo", sans-serif;
+    font: 100 100%/1.6 "Open-Sans", Open-Sans;
     overflow-x: hidden;
     width: 100%;
 }
@@ -72,16 +74,12 @@ body {
     color: blue-900;
 }
 
-
-.a {
-    text-decoration: none;
-    color: #000;
+.box {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    z-index: 1000;
+    right: 1rem;
+    bottom: 1rem;
+    /* background-color: #34495E;  */
 }
-/* 
-.card {
-    backdrop-filter: blur(10px);
-    background: rgba(map-get($colors, white), 0,075);
-    border: 1px solid rgba(map-get($colors, white), 0.18);
-    border-radius: 15px;
-    box-shadow: 0 10px 35px 0 rgba(map-get($colors, brown), 0.65);
-} */
