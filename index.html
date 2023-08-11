@@ -96,9 +96,9 @@
                     <ul>       
                         <li title="Data de Nascimento" id="dtNascimento"> <i class="fa-solid fa-cake-candles"> </i> 15/07/1992 </li> 
                         <!-- <script>getIdade() </script> -->
-                        <li title="idade"> <i class="fa-solid fa-clock"></i> 31 Anos </li> 
-                        <li title="Estado civil"> <i class="fa-solid fa-user-group"></i> Solteiro  </li> 
-                        <li title="Nacionalidade"><i class="fa-solid fa-globe"></i> Brasileiro</li>
+                        <li title="idade" id="idade"> <i class="fa-solid fa-clock"></i> 31 Anos </li> 
+                        <li title="Estado civil" id="est_civil"> <i class="fa-solid fa-user-group"></i> Solteiro  </li> 
+                        <li title="Nacionalidade" id="Nacionalidade"><i class="fa-solid fa-globe"></i> Brasileiro</li>
                     </ul>
                 </div>     
                 <!-- Endereço -->
@@ -209,30 +209,35 @@
                         </a>
                     </small>
                 </h1>    
-                <ul>
-                    <ul class="container-fluid">                  
+                    <ul class="container-fluid">         
                         <li>
-                            <p class="text-justify">
-                                <h4> 
-                                    Engenharia da Computação - Bacharelado 
-                                </h4>
-                                (Concluído pela Centro Universitário IBTA - Dezembro/2018)
-                            </p>                            
+                            <br>
+                        </li>
+                        <li>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Engenharia da Computação - Bacharelado  
+                                </h5>                               
+                                <h6 class="card-subtitle mb-2 text-body-secondary">
+                                    (Concluído pela Centro Universitário IBTA - Dezembro/2018)
+                                </h6>                         
+                            </div>
+                        </li>
+                        <li>
+                            <br>
                         </li>
                         <li>  
-                            <p class="text-justify">
-                                <h4>
+                            <div class="card-body">
+                                <h5 class="card-title">
                                     MBA Em Artificial Intelligence & Machine Learning 
-                                </h4>
-                                (Concluído pela FIAP - Outubro/2020) 
-                            </p>                                
-                        </li>                        
-                        <li> 
-                            <p>
-                            </p>
-                        </li>
+                                </h5>                               
+                                <h6 class="card-subtitle mb-2 text-body-secondary">
+                                    (Concluído pela FIAP - Outubro/2020) 
+                                </h6>                         
+                            </div>                                                        
+                        </li>                             
                     </ul>
-                </ul>            
+                        
             </div>
         </section>
         <hr class="border border-dark border-1 opacity-80">
@@ -347,198 +352,258 @@
                 </h1>    
                 <ul>
                     <li>
-                        <p>
-                            <!-- <div class="card">
-                                <div class="card-header">
-                                    <h4>
-                                        <img src="https://media.licdn.com/dms/image/C4D0BAQHweBvbiJRhWQ/company-logo_100_100/0/1657655055787?e=1699488000&v=beta&t=r4kTf91N_5gZutcy6boNyhD-Z7zCLYK5j2Vi-u5cND8" alt="" height="25px" width="25px"> 
-                                        Banco Pan S.A. 
-                                    </h4>
-                                </div>
-                                <div class="card-body">
-                                    <blockquote class="blockquote mb-0">
-                                        <p>Av. Paulista, 1374 - Bela Vista - São Paulo - SP. </p>
-                                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                                    </blockquote>
-                                </div>
-                            </div> -->
-                            </br>
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            <h4>
-                                <img src="https://media.licdn.com/dms/image/C4D0BAQHweBvbiJRhWQ/company-logo_100_100/0/1657655055787?e=1699488000&v=beta&t=r4kTf91N_5gZutcy6boNyhD-Z7zCLYK5j2Vi-u5cND8" alt="" height="25px" width="25px"> 
-                                Banco Pan S.A. 
-                            </h4>
-                            &ensp;&ensp;&ensp;&ensp;Av. Paulista, 1374 - Bela Vista - São Paulo - SP. 
-                        </p>
-                    </li>
-                    <li>
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">
-                                    Engenheiro de Software Jr. 
+                                <h5 class="card-title" title="Cargo">
+                                    <img src="https://media.licdn.com/dms/image/C4D0BAQHweBvbiJRhWQ/company-logo_100_100/0/1657655055787?e=1699488000&v=beta&t=r4kTf91N_5gZutcy6boNyhD-Z7zCLYK5j2Vi-u5cND8" alt="" height="25px" width="25px"> 
+                                    Banco Pan S.A. 
                                 </h5>                               
-                                <h6 class="card-subtitle mb-2 text-body-secondary">
-                                    Período: De 07/2021 até 08/2023 
+                                <h6 class="card-subtitle mb-2 text-body-secondary" title="Periodo">
+                                    Período: De 03/2015 até 08/2023.  
                                 </h6>
                                 <p class="card-text text-justify">
-                                    Desenvolvimento de soluções operacionais visando ganho de produtividade, escala, financeiro ou mitigação de risco, 
-                                    utilizando:
+                                    Av. Paulista, 1374 - Bela Vista - São Paulo - SP. 
                                 </p>
                             </div>
-                            <!-- <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Excel (VBA) - “Robôs” para executar tarefas repetitivas, como acessar sites e extrair ou inserir informações, acessar relatórios periódicos e consolidar as informações e/ou executar uma série de cálculos, padronizar informações para carga em banco de dados;</li>
-                                <li class="list-group-item">Access (VBA) / Visual Studio (VB/C#) - Ferramentas (minissistemas) com diversas funcionalidades para os usuários, como importação de dados de outros sistemas, geração e envio de e-mails automaticamente, conciliação de informações, preenchimento de formulários, controles diversos;</li>
-                                <li class="list-group-item">SSIS - Integração entre os bancos de dados e diversas fontes de informações, como arquivos .txt, planilhas Excel, Access, outros servidores;</li>
-                                <li class="list-group-item">SSRS - Criação de relatórios vinculados a bancos de dados para exibição e atualização em tempo real via intranet;</li>
-                                <li class="list-group-item">AWS - Deploy da execução dos projetos atraves de esteira do Pipeline do Jenkins;</li>
-                                <li class="list-group-item">Azure Repos - Guarda e versionamento dos codigos gerados;</li>
-                                <li class="list-group-item">Sustentação - manutenção dos microsistemas legados gerado pelas áreas departamentais, assim como a documentação e criação de troubleshooting para sustentação das atividades;</li>
-                                <li class="list-group-item">Gerenciamento de bancos de dados em servidor SQL - Criação e manutenção de tabelas, views, procedures e jobs;</li>
-                            </ul> -->
-                            
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <!-- <div class="card"> -->
+                                        <div class="card-body">
+                                            <h5 class="card-title">
+                                                Engenheiro de Software Jr. 
+                                            </h5>                               
+                                            <h6 class="card-subtitle mb-2 text-body-secondary">
+                                                Período: De 07/2021 até 08/2023 
+                                            </h6>
+                                            <p class="card-text text-justify">
+                                                Desenvolvimento de soluções operacionais visando ganho de produtividade, escala, financeiro ou mitigação de risco, 
+                                                utilizando:
+                                            </p>
+                                        </div>
+                                        <!-- <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Excel (VBA) - “Robôs” para executar tarefas repetitivas, como acessar sites e extrair ou inserir informações, acessar relatórios periódicos e consolidar as informações e/ou executar uma série de cálculos, padronizar informações para carga em banco de dados;</li>
+                                            <li class="list-group-item">Access (VBA) / Visual Studio (VB/C#) - Ferramentas (minissistemas) com diversas funcionalidades para os usuários, como importação de dados de outros sistemas, geração e envio de e-mails automaticamente, conciliação de informações, preenchimento de formulários, controles diversos;</li>
+                                            <li class="list-group-item">SSIS - Integração entre os bancos de dados e diversas fontes de informações, como arquivos .txt, planilhas Excel, Access, outros servidores;</li>
+                                            <li class="list-group-item">SSRS - Criação de relatórios vinculados a bancos de dados para exibição e atualização em tempo real via intranet;</li>
+                                            <li class="list-group-item">AWS - Deploy da execução dos projetos atraves de esteira do Pipeline do Jenkins;</li>
+                                            <li class="list-group-item">Azure Repos - Guarda e versionamento dos codigos gerados;</li>
+                                            <li class="list-group-item">Sustentação - manutenção dos microsistemas legados gerado pelas áreas departamentais, assim como a documentação e criação de troubleshooting para sustentação das atividades;</li>
+                                            <li class="list-group-item">Gerenciamento de bancos de dados em servidor SQL - Criação e manutenção de tabelas, views, procedures e jobs;</li>
+                                        </ul> -->
+                                        
+                                    <!-- </div> -->
+                                </li>
+                                <li class="list-group-item">
+                                    <!-- <div class="card"> -->
+                                        <div class="card-body">
+                                            <h5 class="card-title">
+                                                Analista de Sistemas I  
+                                            </h5>                               
+                                            <h6 class="card-subtitle mb-2 text-body-secondary">
+                                                Período: De 07/2020 até 06/2021  
+                                            </h6>
+                                            <p class="card-text text-justify">
+                                                Desenvolvimento de soluções para atividades operacionais visando ganho de produtividade, escala, financeiro ou mitigação de risco, utilizando:
+                                            </p>
+                                        </div>
+                                        <!-- <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Excel (VBA) - “Robôs” para executar tarefas repetitivas, como acessar sites e extrair ou inserir informações, acessar relatórios periódicos e consolidar as informações e/ou executar uma série de cálculos, padronizar informações para carga em banco de dados;</li>
+                                            <li class="list-group-item">Access (VBA) / Visual Studio (VB/C#) - Ferramentas (minissistemas) com diversas funcionalidades para os usuários, como importação de dados de outros sistemas, geração e envio de e-mails automaticamente, conciliação de informações, preenchimento de formulários, controles diversos;</li>
+                                            <li class="list-group-item">SSIS - Integração entre os bancos de dados e diversas fontes de informações, como arquivos .txt, planilhas Excel, Access, outros servidores;</li>
+                                            <li class="list-group-item">SSRS - Criação de relatórios vinculados a bancos de dados para exibição e atualização em tempo real via intranet;</li>
+                                            <li class="list-group-item">Gerenciamento de bancos de dados em servidor SQL - Criação e manutenção de tabelas, views, procedures e jobs;</li>
+                                            <li class="list-group-item">Sustentação - manutenção dos microsistemas legados gerado pelas áreas departamentais, assim como a documentação e criação de troubleshooting para sustentação das atividades;</li>
+                                        </ul> -->                            
+                                    <!-- </div>  -->
+                                </li>
+                                <li class="list-group-item">
+                                    <!-- <div class="card"> -->
+                                        <div class="card-body">
+                                            <h5 class="card-title">
+                                                Analista de Planejamento e Controles Operacionais Pl.  
+                                            </h5>                               
+                                            <h6 class="card-subtitle mb-2 text-body-secondary">
+                                                Período: De 01/2020 Até 06/2020 
+                                            </h6>
+                                            <p class="card-text text-justify">
+                                                Desenvolvimento de soluções para atividades operacionais visando ganho de produtividade, escala, financeiro ou mitigação de risco, utilizando:
+                                            </p>
+                                        </div>
+                                        <!-- <ul>
+                                            <li class="list-group-item">Excel (VBA) - “Robôs” para executar tarefas repetitivas, como acessar sites e extrair ou inserir informações, acessar relatórios periódicos e consolidar as informações e/ou executar uma série de cálculos, padronizar informações para carga em banco de dados;</li>
+                                            <li class="list-group-item">Access (VBA) / Visual Studio (VB/C#) - Ferramentas (minissistemas) com diversas funcionalidades para os usuários, como importação de dados de outros sistemas, geração e envio de e-mails automaticamente, conciliação de informações, preenchimento de formulários, controles diversos;</li>
+                                            <li class="list-group-item">SSIS - Integração entre os bancos de dados e diversas fontes de informações, como arquivos .txt, planilhas Excel, Access, outros servidores;</li>
+                                            <li class="list-group-item">SSRS - Criação de relatórios vinculados a bancos de dados para exibição e atualização em tempo real via intranet;</li>
+                                            <li class="list-group-item">Gerenciamento de bancos de dados em servidor SQL - Criação e manutenção de tabelas, views, procedures e jobs;</li>
+                                        </ul> -->
+                                    <!-- </div>  -->
+                                </li>
+                                <li class="list-group-item">
+                                    <!-- <div class="card"> -->
+                                        <div class="card-body">
+                                            <h5 class="card-title">
+                                                Analista de Planejamento e Controles Operacionais Jr.  
+                                            </h5>                               
+                                            <h6 class="card-subtitle mb-2 text-body-secondary">
+                                                Período: De 12/2016 Até 12/2019 
+                                            </h6>
+                                            <p class="card-text text-justify">
+                                                Desenvolvimento de soluções para atividades operacionais visando ganho de produtividade, escala, financeiro ou mitigação de risco, utilizando:
+                                            </p>
+                                        </div>
+                                        <!-- <ul>
+                                            <li class="list-group-item">Excel (VBA) - “Robôs” para executar tarefas repetitivas, como acessar sites e extrair ou inserir informações, acessar relatórios periódicos e consolidar as informações e/ou executar uma série de cálculos, padronizar informações para carga em banco de dados;</li>
+                                            <li class="list-group-item">Access (VBA) / Visual Studio (VB/C#) - Ferramentas (minissistemas) com diversas funcionalidades para os usuários, como importação de dados de outros sistemas, geração e envio de e-mails automaticamente, conciliação de informações, preenchimento de formulários, controles diversos;</li>
+                                            <li class="list-group-item">SSIS - Integração entre os bancos de dados e diversas fontes de informações, como arquivos .txt, planilhas Excel, Access, outros servidores;</li>
+                                            <li class="list-group-item">SSRS - Criação de relatórios vinculados a bancos de dados para exibição e atualização em tempo real via intranet;</li>
+                                            <li class="list-group-item">Gerenciamento de bancos de dados em servidor SQL - Criação e manutenção de tabelas, views, procedures e jobs;</li>
+                                        </ul> -->
+                                    <!-- </div> -->
+                                </li>
+                                <li class="list-group-item">
+                                    <!-- <div class="card"> -->
+                                        <div class="card-body">
+                                            <h5 class="card-title" title="Cargo">
+                                                Analista de Contas a Pagar Jr.   
+                                            </h5>                               
+                                            <h6 class="card-subtitle mb-2 text-body-secondary" title="Periodo">
+                                                Período: De 03/2015 até 11/2016
+                                            </h6>
+                                            <p class="card-text text-justify">
+                                                Desenvolvimento de dashboard referente a pagamentos em excel, sustentação de microaplicação em windows forms referente ao controle de pagamento de custas de cobrança,
+                                                para atividades operacionais visando ganho de produtividade, escala, financeiro ou mitigação de risco,     
+                                                Manutenção e desenvolvimento de novas funcionalidades na ferramenta de controle utilizada pela área, como controle de fluxos de pagamentos;
+                                                conciliação de pagamentos entre sistemas da tesouraria e legados e auxilio nas atividades area de Contas a pagar
+                                            </p>
+                                        </div>
+                                    <!-- </div> -->
+                                </li>                                
+                            </ul>                            
                         </div>
-                    </li>       
-                    <li><br></li>            
-                    <li>
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    Analista de Sistemas I  
-                                </h5>                               
-                                <h6 class="card-subtitle mb-2 text-body-secondary">
-                                    Período: De 07/2020 até 06/2021  
-                                </h6>
-                                <p class="card-text text-justify">
-                                    Desenvolvimento de soluções para atividades operacionais visando ganho de produtividade, escala, financeiro ou mitigação de risco, utilizando:
-                                </p>
-                            </div>
-                            <!-- <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Excel (VBA) - “Robôs” para executar tarefas repetitivas, como acessar sites e extrair ou inserir informações, acessar relatórios periódicos e consolidar as informações e/ou executar uma série de cálculos, padronizar informações para carga em banco de dados;</li>
-                                <li class="list-group-item">Access (VBA) / Visual Studio (VB/C#) - Ferramentas (minissistemas) com diversas funcionalidades para os usuários, como importação de dados de outros sistemas, geração e envio de e-mails automaticamente, conciliação de informações, preenchimento de formulários, controles diversos;</li>
-                                <li class="list-group-item">SSIS - Integração entre os bancos de dados e diversas fontes de informações, como arquivos .txt, planilhas Excel, Access, outros servidores;</li>
-                                <li class="list-group-item">SSRS - Criação de relatórios vinculados a bancos de dados para exibição e atualização em tempo real via intranet;</li>
-                                <li class="list-group-item">Gerenciamento de bancos de dados em servidor SQL - Criação e manutenção de tabelas, views, procedures e jobs;</li>
-                                <li class="list-group-item">Sustentação - manutenção dos microsistemas legados gerado pelas áreas departamentais, assim como a documentação e criação de troubleshooting para sustentação das atividades;</li>
-                            </ul> -->                            
-                        </div>                        
                     </li>
-                    <li><br></li>   
-                    <li>
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    Analista de Planejamento e Controles Operacionais Pl.  
-                                </h5>                               
-                                <h6 class="card-subtitle mb-2 text-body-secondary">
-                                    Período: De 01/2020 Até 06/2020 
-                                </h6>
-                                <p class="card-text text-justify">
-                                    Desenvolvimento de soluções para atividades operacionais visando ganho de produtividade, escala, financeiro ou mitigação de risco, utilizando:
-                                </p>
-                            </div>
-                            <!-- <ul>
-                                <li class="list-group-item">Excel (VBA) - “Robôs” para executar tarefas repetitivas, como acessar sites e extrair ou inserir informações, acessar relatórios periódicos e consolidar as informações e/ou executar uma série de cálculos, padronizar informações para carga em banco de dados;</li>
-                                <li class="list-group-item">Access (VBA) / Visual Studio (VB/C#) - Ferramentas (minissistemas) com diversas funcionalidades para os usuários, como importação de dados de outros sistemas, geração e envio de e-mails automaticamente, conciliação de informações, preenchimento de formulários, controles diversos;</li>
-                                <li class="list-group-item">SSIS - Integração entre os bancos de dados e diversas fontes de informações, como arquivos .txt, planilhas Excel, Access, outros servidores;</li>
-                                <li class="list-group-item">SSRS - Criação de relatórios vinculados a bancos de dados para exibição e atualização em tempo real via intranet;</li>
-                                <li class="list-group-item">Gerenciamento de bancos de dados em servidor SQL - Criação e manutenção de tabelas, views, procedures e jobs;</li>
-                            </ul> -->
-                        </div>         
-                    </li>
-                    <li><br></li>   
-                    <li>
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    Analista de Planejamento e Controles Operacionais Jr.  
-                                </h5>                               
-                                <h6 class="card-subtitle mb-2 text-body-secondary">
-                                    Período: De 12/2016 Até 12/2019 
-                                </h6>
-                                <p class="card-text text-justify">
-                                    Desenvolvimento de soluções para atividades operacionais visando ganho de produtividade, escala, financeiro ou mitigação de risco, utilizando:
-                                </p>
-                            </div>
-                            <!-- <ul>
-                                <li class="list-group-item">Excel (VBA) - “Robôs” para executar tarefas repetitivas, como acessar sites e extrair ou inserir informações, acessar relatórios periódicos e consolidar as informações e/ou executar uma série de cálculos, padronizar informações para carga em banco de dados;</li>
-                                <li class="list-group-item">Access (VBA) / Visual Studio (VB/C#) - Ferramentas (minissistemas) com diversas funcionalidades para os usuários, como importação de dados de outros sistemas, geração e envio de e-mails automaticamente, conciliação de informações, preenchimento de formulários, controles diversos;</li>
-                                <li class="list-group-item">SSIS - Integração entre os bancos de dados e diversas fontes de informações, como arquivos .txt, planilhas Excel, Access, outros servidores;</li>
-                                <li class="list-group-item">SSRS - Criação de relatórios vinculados a bancos de dados para exibição e atualização em tempo real via intranet;</li>
-                                <li class="list-group-item">Gerenciamento de bancos de dados em servidor SQL - Criação e manutenção de tabelas, views, procedures e jobs;</li>
-                            </ul> -->
-                        </div>
-                    </li>
-                    <li><br></li>   
+                </ul>                
+                <ul>
                     <li>
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title" title="Cargo">
-                                    Analista de Contas a Pagar Jr.   
+                                    <img src="https://www.sonda.com/ResourcePackages/Sonda/assets/images/logo-sonda.svg" alt="" height="25px" width="25px"> 
+                                    Sonda Prockwork Informática LTDA. 
                                 </h5>                               
                                 <h6 class="card-subtitle mb-2 text-body-secondary" title="Periodo">
-                                    Período: De 07/2020 até 06/2021  
+                                    Período: De 12/2013 até 03/2015 
                                 </h6>
                                 <p class="card-text text-justify">
-                                    Desenvolvimento de dashboard referente a pagamentos em excel, sustentação de microaplicação em windows forms referente ao controle de pagamento de custas de cobrança,
-                                    para atividades operacionais visando ganho de produtividade, escala, financeiro ou mitigação de risco,     
-                                    Manutenção e desenvolvimento de novas funcionalidades na ferramenta de controle utilizada pela área, como controle de fluxos de pagamentos;
-                                    conciliação de pagamentos entre sistemas da tesouraria e legados e auxilio nas atividades area de Contas a pagar
+                                    Rua Dom Aguirre, BL II 1 And - Vila Sofia - São Paulo - SP. </br>
+                                    Projeto Banco Pan 
                                 </p>
                             </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="card-body">
+                                        <h5 class="card-title" title="Cargo">
+                                            Analista de Suporte Pleno   
+                                        </h5>                               
+                                        <p class="card-text text-justify">
+                                            Manutenção e instalação de software;
+                                            Manutenção de equipamentos; 
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                    </li>                
-                </ul>                
-                <ul>
-                    <li>
-                        <p>
-                            <h4>
-                                <img src="https://www.sonda.com/ResourcePackages/Sonda/assets/images/logo-sonda.svg" alt="" height="25px" width="25px"> 
-                                Sonda Prockwork Informática LTDA.
-                            </h4>
-                            &ensp;Rua Dom Aguirre, BL II 1 And - Vila Sofia - São Paulo - SP. </br>
-                            &ensp;Projeto Banco Pan </br>
-                            &ensp;De 12/2013 a 03/2015 
-                        </p>
                     </li>
                 </ul>                
                 <ul>
                     <li>
-                        <p>
-                            <h4>
-                                <img src="https://ctctech.com.br/wp-content/uploads/2021/05/Grupo-34.svg" alt="" height="25px" width="25px"> 
-                                ConnectCom Teleinformática Com. E Serv. LTDA. 
-                            </h4>
-                            &ensp;Av. Bernardino de Campos, 98 - Paraiso, São Paulo - SP.  </br>
-                            &ensp;Projeto Banco Panamericano Banco Pan  </br>
-                            &ensp;De 09/2012 a 12/2013 
-                        </p>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title" title="Cargo">
+                                    <img src="https://ctctech.com.br/wp-content/uploads/2021/05/Grupo-34.svg" alt="" height="25px" width="25px"> 
+                                    ConnectCom Teleinformática Com. E Serv. LTDA. 
+                                </h5>                               
+                                <h6 class="card-subtitle mb-2 text-body-secondary" title="Periodo">
+                                    Período: De 09/2012 até 12/2013  
+                                </h6>
+                                <p class="card-text text-justify">
+                                    Av. Bernardino de Campos, 98 - Paraiso, São Paulo - SP.  </br>
+                                    Projeto Banco Panamericano Banco Pan  
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="card-body">
+                                        <h5 class="card-title" title="Cargo">
+                                            Tecnico em Microinformatica II
+                                        </h5>                               
+                                        <p class="card-text text-justify">
+                                            Manutenção e instalação de software;
+                                            Manutenção de equipamentos; 
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
                 <ul>
                     <li> 
-                        <p>
-                            <h4>
-                                <img src="https://rmkcdn.successfactors.com/1698e3f5/be6dd486-05d7-411e-978f-f.svg" alt="" height="25px" width="25px"> 
-                                SITEL DO BRASIL LTDA. 
-                            </h4>
-                            &ensp;Rua Achilles Orlando Curtollo, 499 - Barra Funda, São Paulo - SP. <br>
-                            &ensp;Projeto HP Consumer <br>
-                            &ensp;De 06/2011 a 08/2012.
-                        </p>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title" title="Cargo">
+                                    <img src="https://rmkcdn.successfactors.com/1698e3f5/be6dd486-05d7-411e-978f-f.svg" alt="" height="25px" width="25px"> 
+                                    SITEL DO BRASIL LTDA. 
+                                </h5>                               
+                                <h6 class="card-subtitle mb-2 text-body-secondary" title="Periodo">
+                                    Período: De 06/2011 até 08/2012.  
+                                </h6>
+                                <p class="card-text text-justify">
+                                    Rua Achilles Orlando Curtollo, 499 - Barra Funda, São Paulo - SP. <br>
+                                    Projeto HP Consumer 
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="card-body">
+                                        <h5 class="card-title" title="Cargo">
+                                            Analista de Suporte
+                                        </h5>                               
+                                        <p class="card-text text-justify">
+                                            Atendimento para clientes atraves de contato telefonico, com orientações para resolução de problemas e aplicação de troubleshooting;
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
-                <ul>
+                <ul>                    
                     <li> 
-                        <p>
-                            <h4>
-                                MAK PAINÉIS ELÉTRICOS LTDA.
-                            </h4>
-                            &ensp;Rua Osasco nº1231 Pq. Empresarial - Cajamar/SP <br>
-                            &ensp;De 07/2010 a 12/2010. 
-                        </p>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title" title="Cargo">
+                                    MAK PAINÉIS ELÉTRICOS LTDA.
+                                </h5>                               
+                                <h6 class="card-subtitle mb-2 text-body-secondary" title="Periodo">
+                                    Período: De 07/2010 até 12/2010.  
+                                </h6>
+                                <p class="card-text text-justify">
+                                    Rua Osasco nº1231 Pq. Empresarial - Cajamar/SP <br>
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="card-body">
+                                        <h5 class="card-title" title="Cargo">
+                                            Auxiliar de Montagem de Paineis Jr.
+                                        </h5>                               
+                                        <p class="card-text text-justify">
+                                            Montagem de paineis de Pequena a Alta Tensão, preparação dos equipamentos para transporte e armazenagem.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -558,12 +623,20 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
         <script src="https://kit.fontawesome.com/77455978b6.js" crossorigin="anonymous"></script>
+        <script src="/moment.min.js"> </script>
         <script>
             function getIdade(){
-                var idade = document.getElementById("dtNascimento").value;
-                var dia = new Date();
-                alert(idade - dia);
-                return idade - dia
+                const idade = document.querySelector('#dtNascimento').innerText + " 00:00:00.000";
+                const dia = new Date().toLocaleDateString() + " 00:00:00.000";
+                
+                var diff = moment(dia,"DD/MM/YYYY HH:mm:ss").diff(moment(idade,"DD/MM/YYYY HH:mm:ss"));
+                var dias = moment.duration(diff).asDays();
+
+                // //var dias = moment.duration(diff).asDays();
+                
+                return document.querySelector('#idade').innerHTML = '<i class="fa-solid fa-clock"></i> ' + Math.round(dias/365, 2) + ' Anos';
+
+
             }
         </script>
 
