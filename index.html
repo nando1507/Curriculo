@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     </head> 
-    <body class="corpo">         
+    <body class="corpo" >         
         <nav class="navbar navbar-expand-lg justify-content-center"  data-bs-theme="dark" name="topo" >
             <div class="container-fluid">
                 <a class="navbar-brand" href="#" name="topo">
@@ -91,23 +91,89 @@
                     </small>
                 </h1>    
                 <!-- Informações Pessoais -->
-                <div class="container">
+                <div class="container-fluid">
                     <i class="fa-solid fa-address-card"></i> Informações Pessoais
                     <ul>       
-                        <li title="Data de Nascimento" id="dtNascimento"> <i class="fa-solid fa-cake-candles"> </i> 15/07/1992 </li> 
-                        <!-- <script>getIdade() </script> -->
-                        <li title="idade" id="idade"> <i class="fa-solid fa-clock"></i> 31 Anos </li> 
-                        <li title="Estado civil" id="est_civil"> <i class="fa-solid fa-user-group"></i> Solteiro  </li> 
-                        <li title="Nacionalidade" id="Nacionalidade"><i class="fa-solid fa-globe"></i> Brasileiro</li>
+                        <li title="Data de Nascimento" > 
+                            <div  class="container align-items-center d-flex justify-content-left">
+                                <div>
+                                    <i class="fa-solid fa-cake-candles"> </i> 
+                                </div> &nbsp;
+                                <div id="dtNascimento">
+                                    15/07/1992  
+                                </div>
+                            </div>                              
+                        </li>                         
+                        <li title="idade" > 
+                            <div  class="container align-items-center d-flex justify-content-left">
+                                <div>
+                                    <i class="fa-solid fa-clock"></i> 
+                                </div> &nbsp;
+                                <div id="idade">
+                                    31 
+                                </div> &nbsp;
+                                <div>
+                                    Anos  
+                                </div>
+                            </div>                            
+                        </li> 
+                        <li title="Estado civil" > 
+                            <div  class="container align-items-center d-flex justify-content-left">
+                                <div>
+                                    <i class="fa-solid fa-user-group"></i> 
+                                </div> &nbsp;
+                                <div id="est_civil">
+                                    Solteiro 
+                                </div> &nbsp;
+                            </div>    
+                        </li> 
+                        <li title="Nacionalidade" >
+                            <div  class="container align-items-center d-flex justify-content-left">
+                                <div>
+                                    <i class="fa-solid fa-globe"></i> 
+                                </div> &nbsp;
+                                <div id="Nacionalidade">
+                                    Brasileiro 
+                                </div>                             
+                            </div>    
+                            
+                        </li>
                     </ul>
                 </div>     
                 <!-- Endereço -->
                 <div class="container">     
                     <i class="fa-solid fa-map-location"></i> Endereço:   
                     <ul>
-                        <li title="Endereço: Avenida"></li><i class="fa-solid fa-house"></i> Av. João Ventura dos Santos, Nº 222 </li>
-                        <li title="Endereço: Cidade"><i class="fa-solid fa-city"></i> Jd. Baronesa - Osasco/SP </li>
-                        <li title="Endereço: CEP"><i class="fa-solid fa-compass"></i> 06260-170 </li>                        
+                        <li title="Endereço: Avenida">
+                            <div  class="container align-items-center d-flex justify-content-left">
+                                <div>
+                                    <i class="fa-solid fa-house"></i>
+                                </div> &nbsp;
+                                <div>
+                                    Av. João Ventura dos Santos, Nº 222 
+                                </div>
+                            </div>
+                        </li>
+                        <li title="Endereço: Cidade">
+                            <div  class="container align-items-center d-flex justify-content-left">
+                                <div>
+                                    <i class="fa-solid fa-city"></i>
+                                </div> &nbsp;
+                                <div>
+                                    Jd. Baronesa - Osasco/SP 
+                                </div>
+                            </div>
+                        </li>
+                        <li title="Endereço: CEP">
+                            <div  class="container align-items-center d-flex justify-content-left">
+                                <div>
+                                    <i class="fa-solid fa-compass"></i>
+                                </div> &nbsp;
+                                <div>
+                                    06260-170 
+                                </div>
+                            </div>                             
+                        </li>                        
                     </ul>
                 </div>
                 <!-- Contato -->
@@ -118,10 +184,46 @@
                         </div>
                         <div class="container-fluid">           
                             <ul>                 
-                                <li title="Contato: Telefone Residêncial"><i class="fa-solid fa-phone"></i> 11.3686.0768 </li>
-                                <li title="Contato: Celular Principal e WhatsApp"><i class="fa-brands fa-whatsapp"></i> 11.98725.9103 </li>
-                                <li title="Contato: Contato Secundário"><i class="fa-solid fa-mobile"></i> 11.98959.7295 </li>
-                                <li title="Contato: E-Mail"><i class="fa-solid fa-envelope"></i> Fernandob.calo@outlook.com </li>
+                                <li title="Contato: Telefone Residêncial">
+                                    <div  class="container align-items-center d-flex justify-content-left">
+                                        <div>
+                                            <i class="fa-solid fa-phone"></i>
+                                        </div> &nbsp;
+                                        <div>
+                                            11.3686.0768 
+                                        </div>
+                                    </div>
+                                </li>
+                                <li title="Contato: Celular Principal e WhatsApp">
+                                    <div  class="container align-items-center d-flex justify-content-left">
+                                        <div>
+                                            <i class="fa-brands fa-whatsapp"></i>
+                                        </div> &nbsp;
+                                        <div>
+                                            11.98725.9103  
+                                        </div>
+                                    </div>
+                                </li>
+                                <li title="Contato: Contato Secundário">
+                                    <div  class="container align-items-center d-flex justify-content-left">
+                                        <div>
+                                            <i class="fa-solid fa-mobile"></i> 
+                                        </div> &nbsp;
+                                        <div>
+                                            11.98959.7295 
+                                        </div>
+                                    </div>
+                                </li>
+                                <li title="Contato: E-Mail">
+                                    <div  class="container align-items-center d-flex justify-content-left">
+                                        <div>
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </div> &nbsp;
+                                        <div>
+                                            Fernandob.calo@outlook.com  
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>                          
                         </div>   
                     </div>                    
@@ -635,9 +737,20 @@
             </div>
         </section>
         <footer>
-            <p>
-                <i class="fa-regular fa-copyright"></i> 
-                2023 Fernando Bareño Caló
+            
+                <div class="container-fluid align-items-center d-flex justify-content-center">
+                    <div>
+                        <i class="fa-regular fa-copyright"></i> 
+                    </div>
+                    &nbsp;
+                    <div id="ano">
+                        2021
+                    </div>
+                    &nbsp;
+                    <div>
+                        Fernando Bareño Caló 
+                    </div>
+                </div>
             </p>
             <div class="box btn-light align-items-center d-flex justify-content-center" title="topo">
                 <a class="nav-link" href="#topo"  
@@ -646,19 +759,26 @@
                 </a>
             </div>
         </footer>        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
-        <script src="https://kit.fontawesome.com/77455978b6.js" crossorigin="anonymous"></script>
-        <script src="/moment.min.js"> </script>
         <script>
-            function getIdade(){
+            window.onload = function PegaIdade()
+            {
                 const idade = document.querySelector('#dtNascimento').innerText + " 00:00:00.000";
                 const dia = new Date().toLocaleDateString() + " 00:00:00.000";
                 var diff = moment(dia,"DD/MM/YYYY HH:mm:ss").diff(moment(idade,"DD/MM/YYYY HH:mm:ss"));
                 var dias = moment.duration(diff).asDays();
-                return document.querySelector('#idade').innerHTML = '<i class="fa-solid fa-clock"></i> ' + Math.round(dias/365, 2) + ' Anos';
+                //var texto = ' <i class="fa-solid fa-clock"></i> ' +   + ' Anos ';
+                return document.querySelector('#idade').innerHTML = Math.round(dias/365, 2).toString();
             }
         </script>
-
+        <script>
+            window.onload = function PegaAno(){
+                const dia = new Date();
+                return document.querySelector('#ano').innerHTML = dia.getFullYear();
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+        <script src="https://kit.fontawesome.com/77455978b6.js" crossorigin="anonymous"></script>
+        <script src="/moment.min.js"> </script>
 </body>   
 </html>
